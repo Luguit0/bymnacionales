@@ -1,0 +1,67 @@
+@use 'config';
+
+.home {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    align-items: center;
+    text-align: center;
+    background: $bg-img-1;
+    @include config.arreglar-img();
+    margin-bottom: 15px;
+}
+.plantilla {
+
+    &__container1 {
+        height: calc(55vh - 70px);
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+        border: 1px solid $color-secundario;
+        overflow: hidden;
+        @include decolorado4;
+        @include config.text;
+        @include config.arreglar-img;
+        @include config.m-platilla(center);
+        margin-bottom: 5px;
+
+    }
+
+    &__container2 {
+        height: calc(55vh - 70px);
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+        overflow: hidden;
+        border: 1px solid $color-secundario;
+        @include decolorado3;
+        @include arreglar-img;
+        @include config.m-platilla(center);
+        @include text;
+        margin-bottom: 5px;
+    }
+    &__container3 {
+        height: calc(55vh - 70px);
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+        overflow: hidden;
+        border: 1px solid $color-secundario;
+        @include decolorado2;
+        @include arreglar-img;
+        @include config.m-platilla(center);
+        @include text;
+        margin-bottom: 5px;
+    }
+
+    &__text {
+        color: white;
+    }
+
+    &__title {
+        text-decoration: underline;
+        font-size: config.pixeles-rem(40);
+        margin-bottom: config.pixeles-rem(10);
+    }
+
+    &__paragraph {
+        font-size: config.pixeles-rem(15);
+    }
+
+}
